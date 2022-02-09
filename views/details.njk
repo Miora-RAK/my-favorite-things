@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favorites Books</title>
+  </head>
+  <body>
+  <ul >
+  {# {{myBooks.name},{myBooks.author},{myBooks.year}} #}
+      <li> Name: {{parameterValue}} </li>
+        {% if parameterValue === "Book 1"%}
+        <li> Author: {{myBooks[0].author}} </li>
+        <li> Year: {{myBooks[0].year}} </li>
+      {% endif %}
+        {% if parameterValue === "Book 2"%}
+        <li> Author: {{myBooks[1].author}} </li>
+        <li> Year: {{myBooks[1].year}} </li>
+        {% endif %}
+      {% if parameterValue === "Book 3"%}
+        <li> Author: {{myBooks[2].author}} </li>
+        <li> Year: {{myBooks[2].year}} </li>
+        {% endif %}
+
+
+  </ul>
+
+  </body>
+  <footer>
+  </footer>
+</html>
