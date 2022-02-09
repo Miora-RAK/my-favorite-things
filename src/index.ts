@@ -7,15 +7,12 @@ type Book = {
   year: string;
 };
 type Books = Book[];
-//Thinking fast and Slow
-//Indistractable: How to Control Your Attention and Choose Your Life
-//The Lazy Genius Way: Embrace What Matters, Ditch What Doesn't, and Get Stuff Done
 
 const myBooks: Books = [
-  { name: "Book 1", author: "Daniel Kahneman", year: "2012" },
-  { name: "Book 2", author: "Nir Eyal", year: "2020" },
+  { name: "Thinking fast and Slow", author: "Daniel Kahneman", year: "2012" },
+  { name: "Indistractable: How to Control Your Attention and Choose Your Life", author: "Nir Eyal", year: "2020" },
   {
-    name: "Book 3",
+    name: "The Lazy Genius Way: Embrace What Matters, Ditch What Doesn't, and Get Stuff Done",
     author: "Kendra Adachi",
     year: "2020",
   },
