@@ -10,19 +10,18 @@
   <ul >
   {# {{myBooks.name},{myBooks.author},{myBooks.year}} #}
       <li> Name: {{parameterValue}} </li>
-        {% if parameterValue === "Book 1"%}
+        {% if parameterValue === "Thinking fast and Slow"%}
         <li> Author: {{myBooks[0].author}} </li>
         <li> Year: {{myBooks[0].year}} </li>
       {% endif %}
-        {% if parameterValue === "Book 2"%}
+        {% if parameterValue === "Indistractable: How to Control Your Attention and Choose Your Life"%}
         <li> Author: {{myBooks[1].author}} </li>
         <li> Year: {{myBooks[1].year}} </li>
         {% endif %}
-      {% if parameterValue === "Book 3"%}
+      {% if parameterValue === "The Lazy Genius Way: Embrace What Matters, Ditch What Doesn't, and Get Stuff Done"%}
         <li> Author: {{myBooks[2].author}} </li>
         <li> Year: {{myBooks[2].year}} </li>
         {% endif %}
-
 
   </ul>
 
