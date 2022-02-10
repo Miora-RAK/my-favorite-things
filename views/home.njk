@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Favorites Books</title>
-  </head>
-  <body>
-  <ul >
-        <li>
-          <a href="/Thinking fast and Slow" >{{myBooks[0].name}}
-          </a>
-        </li>
-        <li>
-          <a href="/Indistractable: How to Control Your Attention and Choose Your Life" >{{myBooks[1].name}}
-          </a>
-        </li>
-        <li>
-          <a href="/The Lazy Genius Way: Embrace What Matters, Ditch What Doesn't, and Get Stuff Done" >{{myBooks[2].name}}
-          </a>
-        </li>
-      </ul>
+{% extends "layout.njk" %}}
+{% block content %}
 
-  </body>
-  <footer>
-  </footer>
-</html>
+      {%for book in myBooks%}
+
+        <div class = "image">
+
+            <a href="/{{book.slug}}" >
+            <img  src="/{{book.image}}" alt="book" />
+          </a>
+          <div >
+              <a class = "title" href="/{{book.slug}}" >{{book.name}}
+              </a>
+            </div>
+        </div>
+      {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Book Library World</title>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+<!-- NAVBAR START -->
+    <nav>
+      <ul>
+        <li><a href="#" class="item-navigation">Home</a></li>
+        <li>
+          <a href="#" class="item-navigation">Books</a>
+        </li>
+        <li><a href="#" class="item-navigation">Discovery</a></li>
+        <li><a href="#" class="item-navigation">Support</a></li>
+         <li>
+          <a href="#" class="item-navigation">
+            <img class="logo" src="#" alt="panier" />
+          </a>
+        </li>
+         <li>
+          <a href="#" class="item-navigation">
+            <img class="logo" src="#" alt="favoris" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-navigation">
+            <img class="logo" src="#" alt="menu" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class = "book-list">
+    {% block content %} {% endblock %}
+    </div>
+
+   </body>
+   <footer>
+   </footer>
+</html>
